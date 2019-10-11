@@ -1,0 +1,56 @@
+﻿Hướng dẫn sử dụng phần mềm ứng dụng quản lý bán hàng cà phê
+
+LƯU Ý:
+CHƯƠNG TRÌNH CHỈ CHẠY KHI ĐÃ CÓ SQL!!!!!!!!(hãy thực hiện các bước sau)
+
+*** Tải file về và extrect file CHF.zip.
+*** Truy cập vào CHF. Bây giờ hãy đảm bảo máy có SQL server phiên bản từ 2012 trở lên.
+*** Mở bản script.sql lên và chạy trong SQL server.
+
+*** Cài đặt Netbeans và chọn Open object đến địa chỉ đặt ứng dụng.
+*** Mở Source code => Chọn database 
+*** Ở dòng code jdbc:sqlserver://localhost:1433;databaseName=qlBanCafe;Username=sa;Password=123;
+Hãy điền vào username và password của SQL server của bạn khi chạy bản script.sql
+
+*** Chọn Libraries bên trái, click phải chọn Add JAR/Folder => chọn 2 file sqljdbc4.jar và rs2xml.jar => Open
+
+Sau đó RUN 
+
+===========CHƯƠNG TRÌNH BẮT ĐẦU HOẠT ĐỘNG=======
+
+- Tài khoản đăng nhập:
+*** username: admin1
+*** password: admin1
+			HOẶC
+				- Tài khoản khác:
+				*** username: admin2
+				*** passoword: admin2
+
+============MÀN HÌNH GIAO DIỆN BÁN HÀNG XUẤT HIỆN==========
+
+PHƯƠNG THỨC BÁN HÀNG:
+1.Chọn sản phẩm theo Loại đã có sẵn trên các tab
+2.Bấm thêm, nhập số lượng theo mong muốn nhưng không đươc bé hơn -1 và lớn hơn 20
+3.Sau khi đã chọn được các sản phẩm muốn mua. Nếu muốn giảm giá, thì nhập mã khuyến mãi và Enter.
+4.Chọn Thanh toán và xuất hiện form Hóa đơn được In ra, nhấn Enter lần nữa để form Hóa đơn tắt đi.(Xem như hóa đơn đã được in ra)
+
+PHƯƠNG THỨC CHỨC NĂNG:
+Demo chức năng quản lý sản phẩm
+1. Chọn chức năng => quản lý sản phẩm
+2. Muốn thêm thì nhấn nút Thêm, điền đầy đủ thông tin và nhấn nút Lưu
+3. Muốn sửa hoặc xóa thì phải chọn sản phẩm muốn sửa trước trên Bảng danh sách. 
+	*** Sửa thì thay đổi nội dung thông tin và nhấn nút Lưu.
+	*** Xóa thì nhấn nút Xóa
+4. Hủy để quay lại trạng thái ban đầu.
+
+Demo chức năng Thống kê
+1. Chọn thống kê
+2. Chọn Từ ngày không lớn hơn Đến ngày
+3. Nhấn hiển thị
+
+============THOÁT VÀ ĐĂNG XUẤT KHỎI HỆ THỐNG==============
+
+Chọn hệ thống => đăng xuất hoặc thoát
+
+*** Đăng xuất sẽ quay lại Form đăng nhập
+*** Thoát sẽ tắt chương trình

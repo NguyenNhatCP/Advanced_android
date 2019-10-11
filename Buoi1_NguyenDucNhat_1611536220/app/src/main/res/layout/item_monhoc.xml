@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:shrinkColumns="*"
+    android:stretchColumns="*"
+    android:background="#ffffff"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow
+        android:id="@+id/tblTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView android:layout_weight="1"
+            android:text="Mã MH"
+            android:gravity="center"
+            android:textColor="#220012"
+            android:textStyle="bold"/>
+        <TextView android:layout_weight="1"
+            android:text="Tên MH"
+            android:gravity="center"
+            android:textColor="#220012"
+            android:textStyle="bold"/>
+    </TableRow>
+    <TableRow
+        android:id="@+id/tblContext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvMaMH"
+            android:layout_weight="1"
+            android:text="Code"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/tvTenMH"
+            android:layout_weight="1"
+            android:text="Name"
+            android:gravity="center"/>
+    </TableRow>
+</TableLayout>
